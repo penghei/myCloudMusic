@@ -1,0 +1,38 @@
+@import '../../../myStyle.scss';
+.tableHead{
+    @include flexBoxRow();
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    p{
+        width: 33.33%;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+.listItems{
+    @include flexBoxRow();
+    align-items: center;
+    min-height: 40px;
+    max-height: 100px;
+    background-color: white;
+    overflow: hidden;
+    &:nth-of-type(2n){
+        background-color: rgb(243, 243, 243);
+    }
+    &:hover{
+        background-color: rgb(190, 188, 188);
+    }
+    p{
+        width: 33.33%;
+        margin: 0;
+        padding: 0 0 0 10px;
+        font-size: 15px;
+        &:nth-child(1){
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}

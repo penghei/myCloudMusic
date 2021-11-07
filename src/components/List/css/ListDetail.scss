@@ -1,0 +1,35 @@
+@import "../../../myStyle.scss";
+.listdetailmain {
+  @include flexBoxRow();
+  @media screen and (max-width: 900px) {
+    @include flexBoxCol();
+  }
+  max-width: 1300px;
+  padding: 15px;
+  align-items: center;
+  height: 100%;
+  .listdetail-pic {
+    width: 350px;
+    margin-right: 10px;
+    text-align: center;
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+  .listdetail-desp {
+    padding-right: 20px;
+    width: 100%;
+    min-width: 200px;
+    @include flexBoxCol();
+    @media screen and (max-width: 1400px) {
+      width: 50%;
+      @media screen and (max-width: 500px) {
+        .desp {
+          display: none;
+        }
+      }
+     
+    }
+  }
+}

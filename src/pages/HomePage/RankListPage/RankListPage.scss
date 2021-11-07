@@ -1,0 +1,5 @@
+@import "../../../myStyle.scss";
+.ranklist{
+    @include flexBoxRow();
+    justify-content: center;
+}

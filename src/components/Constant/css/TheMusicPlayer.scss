@@ -1,0 +1,74 @@
+@import "../../../myStyle.scss";
+.musicplayermain {
+  @include flexBoxCol();
+  height: 100%;
+  justify-content: center;
+  .progress{
+    @include flexBoxRow();
+    height: 5px;
+    border: {
+      style: solid;
+      width:1px;
+      color:gray;
+    }
+  }
+  .progressbar {
+    height: 5px;
+    background-color: red;
+  }
+  .player {
+    height: 50px;
+    @include flexBoxRow();
+    align-items: center;
+    .sider-music {
+      width: 30%;
+      min-width: 120px;
+      @include flexBoxRow();
+      align-items: center;
+      .music-avatar {
+        width: 20%;
+        text-align: center;
+        min-width: 40px;
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .music-detail {
+        width: 80%;
+        @include flexBoxCol();
+        justify-content: space-around;
+        .musicName {
+          height: 50%;
+        }
+        .progressTime {
+          height: 50%;
+        }
+        p {
+          margin: 0 0 0 5px;
+          padding: 0;
+          &:nth-child(1) {
+            font-weight: bold;
+          }
+          &:nth-child(2) {
+            color: gray;
+          }
+        }
+      }
+    }
+    .music-main {
+      width: 40%;
+      min-width: 30vw;
+      @include flexCenter();
+      div {
+        margin-left: 25px;
+      }
+    }
+    .sider-setting {
+      width: 30%;
+      min-width: 20vh;
+      text-align: center;
+      @include flexCenter();
+    }
+  }
+}

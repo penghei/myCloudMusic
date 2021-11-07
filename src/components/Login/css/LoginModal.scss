@@ -1,0 +1,13 @@
+@import '../../../myStyle.scss';
+.userblock{
+    @include flexBoxRow();
+    align-items: center;
+    .avatar{
+        text-align: center;
+        width: 30%;
+    }
+    .username{
+        text-align: center;
+        width: 70%;
+    }
+}

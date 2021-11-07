@@ -1,0 +1,10 @@
+@import "../../../myStyle.scss";
+.searchingmain{
+    @include flexBoxCol();
+    .head{
+        height: 10vh;
+        @include flexBoxCol();
+        justify-content: center;
+        padding-left: 30px;
+    }
+}

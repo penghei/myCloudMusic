@@ -1,0 +1,48 @@
+@import "../../../myStyle.scss";
+.latestblock {
+  height: 50vh;
+  @include flexBoxCol();
+  .latestblocktitle {
+    font-size: 15px;
+    height: 3vh;
+  }
+  .latestblockmain {
+    margin-top: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 20%);
+    @media screen and (max-width:1300px) {
+      grid-template-columns: repeat(2, 40%);
+      @media screen and (max-width:1000px) {
+        grid-template-columns: repeat(2, 30%);
+        @media screen and (max-width:850px) {
+          grid-template-columns: repeat(1,100%);
+        }
+        
+      }
+      
+    }
+    .songItem {
+      @include flexBoxRow();
+      img {
+        height: 80px;
+        width: 80px;
+      }
+      .songDetail {
+        margin-left: 20px;
+        width: 80%;
+        @include flexBoxCol();
+        justify-content: center;
+        p {
+          padding: 0;
+          margin: 0;
+          &:nth-of-type(1) {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

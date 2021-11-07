@@ -1,0 +1,32 @@
+@import "../../../myStyle.scss";
+.recommandmain {
+  @include flexBoxRow();
+  .sider {
+    width: 40vh;
+    @media screen and (max-width: 1500px) {
+      &:nth-child(1) {
+        width: 10%;
+      }
+      @media screen and (max-width: 550px) {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+  .main-main {
+    width: 100vh;
+    @include flexBoxCol();
+    .block-carousel {
+      width: 100%;
+      min-width: 80%;
+    }
+    .block-recommand {
+      width: 100%;
+    }
+    .block-latest {
+      width: 100%;
+      min-width: 80%;
+    }
+  }
+}

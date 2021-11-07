@@ -1,0 +1,5 @@
+@import "../../../myStyle.scss";
+.songmain{
+    @include flexBoxCol();
+    
+}

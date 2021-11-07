@@ -1,0 +1,22 @@
+@import "../../../myStyle.scss";
+.thesidermain {
+  @include flexBoxCol();
+}
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  visibility: hidden;
+}
+.ant-menu-item-selected {
+  color: #f13434 !important;
+  background-color: #fff !important;
+}
+.ant-menu-item-active {
+  background-color: #fff !important;
+  color: #f13434 !important;
+}
+.ant-menu-submenu-title {
+  background-color: #fff !important;
+  color: black !important;
+}

@@ -1,0 +1,10 @@
+.usermain{
+    display: flex;
+    flex-direction: column;
+}
+.usermain>.usersonglist{
+    height: 100vh;
+}
+.usermain>.userdetail{
+    height: 20vh;
+}

@@ -1,0 +1,58 @@
+@import "../../myStyle.scss";
+
+// @mixin flexBoxRow() {
+//     display: flex;
+//     flex-direction: row;
+// }
+// @mixin flexBoxCol {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.musicmain {
+  @include flexBoxRow();
+  justify-content: center;
+  align-items: center;
+
+  .sider {
+    @include flexBoxCol();
+    width: 25%;
+    align-items: center;
+  }
+  .main {
+    width: 50%;
+    @include flexBoxCol();
+    .songdetail {
+      height: 400px;
+
+      @media screen and (min-width: 725px) {
+        @include flexBoxRow();
+        justify-content: center;
+      }
+      .songCover {
+        width: 270px;
+        margin-right: 20px;
+        @include flexCenter();
+        img {
+          height: 250px;
+          width: 250px;
+        }
+      }
+      .songLyrics {
+        min-width: 400px;
+        max-width: 500px;
+        overflow: hidden;
+      }
+    }
+    .commitblock {
+      @include flexBoxRow();
+      .commit {
+        width: 70%;
+      }
+      .recommand {
+        width: 30%;
+        height: 50vh;
+      }
+    }
+  }
+}

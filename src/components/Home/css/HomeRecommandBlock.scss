@@ -1,0 +1,44 @@
+@import "../../../myStyle.scss";
+.recommandblockmain {
+  margin-top: 40px;
+  @include flexBoxCol();
+  justify-content: center;
+  .recommandtitle {
+    height: 3vh;
+    font-size: 15px;
+  }
+  .recommandblock {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    grid-template-rows: repeat(2, 220px);
+    grid-row-gap: 2vh;
+    grid-column-gap: 2vh;
+    @media screen and (max-width: 1350px) {
+      grid-template-columns: repeat(4, 180px);
+      @media screen and (max-width: 1150px) {
+        grid-template-columns: repeat(3, 180px);
+        @media screen and (max-width: 950px) {
+          grid-template-columns: repeat(2, 180px);
+          @media screen and (max-width: 400px) {
+            grid-template-columns: repeat(2, 160px);
+            &{
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+    .mainBlock {
+      img {
+        height: 180px;
+        width: 180px;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

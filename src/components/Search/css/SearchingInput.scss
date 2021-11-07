@@ -1,0 +1,57 @@
+@import '../../../myStyle.scss';
+.searchinput {
+  min-width: 100px;
+}
+// @media screen and (max-width: 1500px) {
+//   .searchinputmain {
+//     display: none;
+//   }
+//   .searchDropdown {
+//     display: none;
+//   }
+// }
+.searchingList {
+  @include flexBoxCol();
+  width: 100%;
+  min-height: 50vh;
+  background-color: white;
+  z-index: 1;
+  margin: 0;
+  border: {
+    color:rgb(177, 177, 177);
+    style:solid;
+    width:1px;
+  }
+  div:nth-of-type(1) {
+    color: gray;
+    margin: 10px 0 0 10px;
+  }
+  .searchingTags {
+    @include gridCenter();
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    .theTag {
+      text-align: center;
+      background-color: white;
+      font-size: 12px;
+      margin: 1px;
+      border: {
+        color:rgb(202, 202, 202);
+        style:solid;
+        width:1px;
+        radius: 10px;
+      }
+      overflow: hidden;
+    }
+    
+  }
+  .searchingHistoryTitle {
+    color: gray;
+    margin-left: 10px;
+  }
+}
+.ant-divider-horizontal {
+  margin: 12px 0 !important;
+}
+

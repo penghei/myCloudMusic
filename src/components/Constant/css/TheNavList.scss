@@ -1,0 +1,37 @@
+@import "../../../myStyle.scss";
+.navlistmain {
+  @include flexBoxRow();
+  align-items: center;
+  .nav-sider {
+    width: 30vh;
+    min-width: 20vh;
+    &:nth-of-type(1) {
+      width: 20vh;
+    }
+  }
+  .nav-main {
+    
+    min-width: 45%;
+    @media screen and (min-width:700px) {
+      width: 70%;
+    }
+    
+  }
+  @media screen and (max-width:700px) {
+    .nav-sider:nth-of-type(1){
+      display: none;
+    }
+  }
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  visibility: hidden;
+}
+.ant-menu-item-selected {
+  color: #f13434 !important;
+}
+.ant-menu-item-active {
+  background-color: #fff !important;
+  color: #f13434 !important;
+}

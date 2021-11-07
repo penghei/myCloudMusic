@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # react的仿网易云
 ## 主要功能
 首页:登录,每日推荐歌单,最新音乐,音乐播放,播放列表
@@ -20,3 +21,6 @@ yarn start
 ## 网易云音乐nodejs服务器启动
 使用cmd或者Git bash
 set PORT=4000 && node app.js
+=======
+# myCloudMusic
+>>>>>>> 974587ef8686fbb8de928aa95e36d5f67fe4c9ad
